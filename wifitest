@@ -9,9 +9,9 @@ MENU=(
 )
 select menu in "${MENU[@]}" ; do
     case $REPLY in
-        1) sudo bash /root/wifitools/airgeddon/airgeddon.sh ;;
+        1) sudo bash /root/wifitest/airgeddon/airgeddon.sh ;;
         2) wifite ;;
-        3) sudo bash /root/wifitools/WiFi-autopwner/wifi-autopwner.sh ;;
+        3) sudo bash /root/wifitest/WiFi-autopwner/wifi-autopwner.sh ;;
         4) break ;;
     esac
 done
