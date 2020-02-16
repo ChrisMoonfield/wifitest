@@ -17,7 +17,7 @@ cd hcxtools
 make
 make install
 cd
-sudo apt install git python iw macchanger net-tools original-awk mawk gawk aircrack-ng xterm beef-xss reaver isc-dhcp-server dsniff sslstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 hostapd hostapd-wpe lighttpd pixiewps curl tshark cowpatty pyrit hcxdumptool nmap routersploit crunch wireless-regdb crda wpasupplicant haveged util-linux procps iproute2 dnsmasq iptables wireshark-qt sipcalc -y
+sudo apt install git python iw macchanger libcurl4-openssl-dev libssl-dev zlib1g-dev libpcap-dev net-tools original-awk mawk gawk aircrack-ng xterm beef-xss reaver isc-dhcp-server dsniff sslstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 hostapd hostapd-wpe lighttpd pixiewps curl tshark cowpatty pyrit hcxdumptool nmap routersploit crunch wireless-regdb crda wpasupplicant haveged util-linux procps iproute2 dnsmasq iptables wireshark-qt sipcalc -y
 sudo apt update -y && apt upgrade -y
 git clone https://github.com/oblique/create_ap
 cd create_ap
