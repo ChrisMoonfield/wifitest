@@ -1,4 +1,11 @@
-sudo apt install git python iw original-awk mawk gawk aircrack-ng xterm slstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 
+sudo sh -c "echo 'deb https://http.kali.org/kali kali-rolling main non-free contrib' > /etc/apt/sources.list.d/kali.list"
+sudo apt install gnupg wget
+wget 'https://archive.kali.org/archive-key.asc'
+sudo apt-key add archive-key.asc
+sudo apt update -y
+sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
+sudo apt update
+sudo aptitude install -t kali-rolling git python iw original-awk mawk gawk aircrack-ng xterm slstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 
 hostapd lighttpd pixiewps curl tshark cowpatty pyrit hcxdumptool nmap routersploit crunch wireless-regdb crda wpasupplicant 
 haveged util-linux procps iproute2 dnsmasq iptables wireshark-qt sipcalc   -y
 sudo apt update -y && apt upgrade -y
