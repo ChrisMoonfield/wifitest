@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo sh -c "echo 'deb https://http.kali.org/kali kali-rolling main non-free contrib' > /etc/apt/sources.list.d/kali.list"
 sudo apt install gnupg wget
 wget 'https://archive.kali.org/archive-key.asc'
