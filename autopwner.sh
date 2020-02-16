@@ -1,1 +1,1 @@
-sudo bash /root/WiFi-autopwner/wifi-autopwner.sh
+sudo bash /root/wifitools/WiFi-autopwner/wifi-autopwner.sh
