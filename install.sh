@@ -31,4 +31,5 @@ git clone https://github.com/derv82/wifite2.git
 cd wifite2
 python setup.py install
 cd /root/wifitools
+mv wifitest /usr/local/bin
 sudo rm -r install.sh
