@@ -1,1 +1,1 @@
-sudo bash ./root/airgeddon/airgeddon.sh
+sudo bash /root/airgeddon/airgeddon.sh
