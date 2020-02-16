@@ -1,7 +1,7 @@
-apt update -y && apt upgrade -y
-apt install git python iw original-awk mawk gawk aircrack-ng xterm slstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 
+sudo apt install git python iw original-awk mawk gawk aircrack-ng xterm slstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 
 hostapd lighttpd pixiewps curl tshark cowpatty pyrit hcxdumptool nmap routersploit crunch wireless-regdb crda wpasupplicant 
 haveged util-linux procps iproute2 dnsmasq iptables wireshark-qt sipcalc   -y
+sudo apt update -y && apt upgrade -y
 cd
 git clone https://github.com/oblique/create_ap
 cd create_ap
