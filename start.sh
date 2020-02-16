@@ -1,12 +1,17 @@
-if test $# -eq 0; then
-echo "Чем тестируем?"
-echo "1) Wifite"
-echo "2) Airgeddon"
-echo "3) WiFi-autopwner"
-fi
-case "$1" in
-1)wifite
-2)sudo bash /root/wifitools/airgeddon/airgeddon.sh
-3)sudo bash /root/wifitools/WiFi-autopwner/wifi-autopwner.sh
-*)echo "нет такой команды" ;;
-esac
+#!/bin/bash
+
+title=
+MENU=(
+    "Запустить Airgeddon"
+    "Запустить Wifite"
+    "Запустить WiFi-autopwner"
+    "Завершение работы"
+)
+select menu in "${MENU[@]}" ; do
+    case $REPLY in
+        1) sudo bash /root/wifitools/airgeddon/airgeddon.sh ;;
+        2) wifite ;;
+        3) sudo bash /root/wifitools/wifi-autopwner/wifi-autopwner.sh ;;
+        4) break ;;
+    esac
+done
