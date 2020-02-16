@@ -5,7 +5,7 @@ sudo apt-key add archive-key.asc
 sudo apt update -y
 sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
 sudo apt update
-sudo apt install git python iw original-awk mawk gawk aircrack-ng xterm sslstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 hostapd lighttpd pixiewps curl tshark cowpatty pyrit hcxdumptool nmap routersploit crunch wireless-regdb crda wpasupplicant haveged util-linux procps iproute2 dnsmasq iptables wireshark-qt sipcalc -y
+sudo apt install git python iw original-awk mawk gawk aircrack-ng xterm beef-xss reaver isc-dhcp-server dsniff sslstrip asleap bettercap hashcat john bully ettercap-text-only mdk4 hostapd hostapd-wpe lighttpd pixiewps curl tshark cowpatty pyrit hcxdumptool nmap routersploit crunch wireless-regdb crda wpasupplicant haveged util-linux procps iproute2 dnsmasq iptables wireshark-qt sipcalc -y
 sudo apt update -y && apt upgrade -y
 cd
 git clone https://github.com/oblique/create_ap
