@@ -1,6 +1,6 @@
 #!/bin/bash
 
-title=
+title="Что выбираем?"
 MENU=(
     "Запустить Airgeddon"
     "Запустить Wifite"
@@ -11,7 +11,7 @@ select menu in "${MENU[@]}" ; do
     case $REPLY in
         1) sudo bash /root/wifitools/airgeddon/airgeddon.sh ;;
         2) wifite ;;
-        3) sudo bash /root/wifitools/wifi-autopwner/wifi-autopwner.sh ;;
+        3) sudo bash /root/WiFitools/wifi-autopwner/wifi-autopwner.sh ;;
         4) break ;;
     esac
 done
