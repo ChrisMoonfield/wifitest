@@ -14,23 +14,26 @@ git clone https://github.com/ZerBea/hcxdumptool.git
 cd hcxdumptool
 sudo make
 sudo make install
-cd /root/wifitest
+cd
+cd ~/wifitest
 git clone https://github.com/ZerBea/hcxtools
 cd hcxtools
 sudo make
 sudo make install
-cd /root/wifitest
+cd
+cd ~/wifitest
 git clone https://github.com/oblique/create_ap
 cd create_ap
 sudo make install
 cd .. && rm -rf create_ap
-cd /root/wifitest
+cd ~/wifitest
 git clone https://github.com/Mi-Al/WiFi-autopwner.git
 git clone --depth 1 https://github.com/v1s1t0r1sh3r3/airgeddon.git
 git clone https://github.com/derv82/wifite2.git
 cd wifite2
 python setup.py install
-cd /root/wifitest
+cd
+cd ~/wifitest
 sudo chmod 755 wifitest
 mv wifitest /usr/local/bin
 sudo rm -r install.sh
